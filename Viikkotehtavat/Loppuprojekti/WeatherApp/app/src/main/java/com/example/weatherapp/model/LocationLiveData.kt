@@ -13,29 +13,6 @@ class LocationLiveData(private val context: Context) : LiveData<Coordinates>() {
     val fusedLocationClient =
         LocationServices.getFusedLocationProviderClient(context)
 
-    /*public fun getLocationData() {
-        if (ActivityCompat.checkSelfPermission(
-                context,
-                Manifest.permission.ACCESS_FINE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-            && ActivityCompat.checkSelfPermission(
-                context,
-                Manifest.permission.ACCESS_COARSE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-        ){
-            return
-        }
-
-        fusedLocationClient.lastLocation
-            .addOnSuccessListener { location ->
-                android.util.Log.d("LocationLiveData", "Location received: $location")
-                location?.let {
-                    setLocationData(it)
-                }
-            }
-
-    }*/
-
     public fun getLocationData() {
         if (ActivityCompat.checkSelfPermission(
                 context,
