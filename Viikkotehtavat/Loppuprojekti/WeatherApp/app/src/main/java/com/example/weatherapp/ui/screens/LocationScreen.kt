@@ -77,11 +77,11 @@ fun LocationScreen(
                         navController.navigate("weather/${location!!.latitude}/${location!!.longitude}")
                     }
                 ) {
-                    Text("Go to Weather page")
+                    Text(stringResource(R.string.go_to_weather_page))
                 }
             }
             else -> {
-                Text("No location yet")
+                Text(stringResource(R.string.no_location_yet))
             }
         }
     }

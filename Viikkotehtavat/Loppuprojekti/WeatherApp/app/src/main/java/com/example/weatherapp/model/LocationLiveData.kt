@@ -28,7 +28,7 @@ class LocationLiveData(private val context: Context) : LiveData<Coordinates>() {
 
         val request = com.google.android.gms.location.LocationRequest.Builder(
             com.google.android.gms.location.Priority.PRIORITY_HIGH_ACCURACY,
-            1000 // 1 second interval
+            1000
         ).build()
 
         fusedLocationClient.requestLocationUpdates(

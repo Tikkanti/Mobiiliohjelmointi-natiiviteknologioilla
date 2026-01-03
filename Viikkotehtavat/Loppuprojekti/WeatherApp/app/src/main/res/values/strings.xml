@@ -4,4 +4,6 @@
     <string name="error">Error: %1$s</string>
     <string name="latitude">Latitude: %1$s</string>
     <string name="longitude">Longitude: %1$s</string>
+    <string name="go_to_weather_page">Go to Weather page</string>
+    <string name="no_location_yet">No location yet</string>
 </resources>

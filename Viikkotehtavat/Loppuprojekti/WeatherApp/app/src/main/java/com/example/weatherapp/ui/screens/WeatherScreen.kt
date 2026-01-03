@@ -34,7 +34,7 @@ fun WeatherScreen(
     val error by viewModel.error.collectAsState()
     val loading by viewModel.loading.collectAsState()
 
-    val apiKey = "4b16fdb644df47703dc3fe5756d6b35d"
+    val apiKey = ""
 
     LaunchedEffect(latitude, longitude) {
         if (latitude != null && longitude != null) {
